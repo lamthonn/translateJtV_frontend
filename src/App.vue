@@ -18,18 +18,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link to="/"><strong>Trang Chủ</strong></router-link>
+            <router-link to="/" class="router"
+              ><strong>Trang Chủ</strong></router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link to="/"><strong>Báo Cáo</strong></router-link>
+            <router-link to="/report" class="router"
+              ><strong>Báo Cáo</strong></router-link
+            >
           </li>
+          <router-link to="/report" type="button" class="btn btn-dark ms-3"
+            >report</router-link
+          >
           <button type="button" class="btn btn-dark ms-3">Get Started</button>
         </ul>
       </div>
     </div>
   </nav>
 
-  <router-view />
+  <router-view class="router-view" />
 </template>
 
 <style>
@@ -40,9 +47,13 @@
 
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
+.router {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 .router-link-exact-active {
   margin: 0 1rem;
   text-decoration: none;
@@ -52,5 +63,8 @@
 .nav-item {
   display: flex;
   align-items: center;
+}
+.router-view {
+  margin-top: 5rem;
 }
 </style>
