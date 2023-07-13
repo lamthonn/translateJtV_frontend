@@ -64,7 +64,4 @@
   display: flex;
   align-items: center;
 }
-.router-view {
-  margin-top: 5rem;
-}
 </style>
