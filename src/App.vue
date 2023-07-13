@@ -3,7 +3,8 @@
     class="navbar navbar-expand-lg navbar-scroll fixed-top shadow-0 border-bottom border-dark"
   >
     <div class="container">
-      <h3>DICTIONARY JTV</h3>
+      <h3>betoni</h3>
+      <h4>Từ điển song ngữ Việt - Nhật</h4>
       <button
         class="navbar-toggler"
         type="button"

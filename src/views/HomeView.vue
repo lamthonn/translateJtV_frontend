@@ -11,9 +11,11 @@
     <h3>{{ sentence.sentenceVN }}</h3>
     <p>{{ sentence.style }}</p>
   </div>
+  <resultView />
 </template>
 
 <script>
+import Result from "./resultView.vue";
 // @ is an alias to /src
 import axios from "axios";
 
@@ -24,7 +26,9 @@ export default {
       sentence_list: [],
     };
   },
-  components: {},
+  components: {
+    resultView: Result,
+  },
 
   mounted() {
     this.getSentence_list();
